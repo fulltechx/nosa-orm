@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                       // Target modern JavaScript version
+    "module": "CommonJS",                     // Module system for Node.js
+    "lib": ["ES2020"],                         // Standard libraries
+    "declaration": true,                      // Generate .d.ts files
+    "outDir": "./dist",                       // Output directory for compiled JavaScript
+    "rootDir": "./src",                       // Root directory of source files
+    "strict": true,                           // Enable all strict type-checking options
+    "esModuleInterop": true,                  // Enables compatibility with CommonJS modules
+    "skipLibCheck": true,                     // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+    "resolveJsonModule": true,                // Allow importing JSON files
+    "moduleResolution": "node",               // How modules get resolved (classic or node)
+    "experimentalDecorators": true,           // Enables experimental support for ES7 decorators (might be useful for future extensions)
+    "emitDecoratorMetadata": true             // Enables experimental support for emitting type metadata for decorators (often used with decorators)
+  },
+  "include": [
+    "src/**/*"                                // Which files to include in compilation
+  ],
+  "exclude": [
+    "node_modules",                           // Exclude node_modules
+    "dist",                                   // Exclude the output directory
+    "tests/**/*"                              // Exclude tests from this main compilation (tests will be handled by Jest/ts-jest)
+  ]
+}
