@@ -1,48 +1,49 @@
 {
-  "name": "lightweight-orm",
-  "version": "1.0.0",
-  "description": "A lightweight ORM for MySQL, PostgreSQL, and MongoDB",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint src/**/*.ts --fix"
-  },
-  "keywords": [
-    "orm",
-    "mysql",
-    "postgresql",
-    "mongodb",
-    "typescript"
-  ],
-  "author": "AI-Developer",
-  "license": "MIT",
-  "dependencies": {
-    "mongodb": "^6.0.0", 
-    "mysql2": "^3.0.0",  
-    "pg": "^8.0.0"       
-  },
-  "devDependencies": {
-    "@types/jest": "^29.0.0", 
-    "@types/node": "^20.0.0", 
-    "@types/pg": "^8.0.0",    
-    "eslint": "^8.0.0",       
-    "eslint-plugin-import": "^2.25.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-standard": "^5.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0", 
-    "@typescript-eslint/parser": "^6.0.0",       
-    "jest": "^29.0.0",        
-    "ts-jest": "^29.0.0",     
-    "typescript": "^5.0.0"    
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "testMatch": [
-      "**/tests/**/*.spec.ts"
-    ]
-  }
+    "name": "nosa-orm",
+    "version": "1.0.0",
+    "description": "- Support Database   - Mysql   - Postgres   - Mongodb   - Redis - Typescript Support",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "lint": "eslint src/**/*.ts",
+        "lint:fix": "eslint src/**/*.ts --fix"
+    },
+    "keywords": [
+        "orm",
+        "mysql",
+        "postgresql",
+        "mongodb",
+        "typescript"
+    ],
+    "author": "AI-Developer",
+    "license": "MIT",
+    "dependencies": {
+        "mongodb": "^6.0.0",
+        "mysql2": "^3.0.0",
+        "pg": "^8.0.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.0.0",
+        "@types/node": "^20.0.0",
+        "@types/pg": "^8.0.0",
+        "eslint": "^8.0.0",
+        "eslint-plugin-import": "^2.25.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-standard": "^5.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "jest": "^29.0.0",
+        "ts-jest": "^29.0.0",
+        "prettier": "^3.5.3",
+        "typescript": "^5.8.3"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "testMatch": [
+            "**/tests/**/*.spec.ts"
+        ]
+    }
 }
