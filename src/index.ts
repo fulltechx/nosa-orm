@@ -12,6 +12,7 @@ export type { DatabaseAdapter } from './adapters/DatabaseAdapter'; // Exporting 
 export { MongoDBAdapter } from './adapters/MongoDBAdapter';
 export { MySQLAdapter } from './adapters/MySQLAdapter';
 export { PostgresAdapter } from './adapters/PostgresAdapter';
+export { RedisAdapter } from './adapters/RedisAdapter';
 
 // It's also common to export everything from a module if needed
 // export * from './orm/ORM';

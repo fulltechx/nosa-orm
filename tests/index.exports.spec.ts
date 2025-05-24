@@ -38,10 +38,16 @@ describe('Library Exports', () => {
     expect(AllExports.PostgresAdapter).toBeDefined();
   });
 
+  // Add this new test case
+  it('should export RedisAdapter class', () => {
+    expect(AllExports.RedisAdapter).toBeDefined();
+  });
+
   // Verify a few specific enum values if necessary
   it('DatabaseType enum should have correct values', () => {
     expect(AllExports.DatabaseType.MONGODB).toEqual('mongodb');
     expect(AllExports.DatabaseType.MYSQL).toEqual('mysql');
     expect(AllExports.DatabaseType.POSTGRESQL).toEqual('postgresql');
+    expect(AllExports.DatabaseType.REDIS).toEqual('redis'); // Add check for REDIS
   });
 });
